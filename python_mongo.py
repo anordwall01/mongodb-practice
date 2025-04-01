@@ -89,6 +89,6 @@ print("Inserted IDs:", result.inserted_ids)
 
 print("displaying results where the course department is English")
 
-english_classes = courses.find({"department": "English"})
+english_classes = courses.find({"professor.department": "English"})
 
 print(dumps(english_classes, indent=2))
